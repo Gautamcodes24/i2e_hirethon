@@ -16,7 +16,7 @@ Production-grade RAG (Retrieval-Augmented Generation) system for answering quest
 ### 1. Install dependencies
 
 ```powershell
-git clone [https://github.com/Gautamcodes24/tech-manual-qa.git](https://github.com/Gautamcodes24/i2e_hirethon.git)
+git clone https://github.com/Gautamcodes24/i2e_hirethon.git
 cd tech-manual-qa
 
 python -m venv .venv
