@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+numpy
+pdfplumber
+pypdf
+faiss-cpu
+sentence-transformers
+requests
+python-multipart
+groq
+openai
+pymupdf
+pytesseract
+Pillow
+python-dotenv
+rank-bm25
+tqdm

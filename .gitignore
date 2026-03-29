@@ -1,0 +1,31 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+
+# IDE
+.vscode/
+.idea/
+
+# Data artefacts (large files)
+data/*.index
+data/*.pkl
+data/uploads/
+data/*.pdf
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
