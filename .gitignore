@@ -13,11 +13,6 @@ env/
 .vscode/
 .idea/
 
-# Data artefacts (large files)
-data/*.index
-data/*.pkl
-data/uploads/
-data/*.pdf
 
 # Node / React
 frontend/node_modules/
@@ -29,3 +24,4 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
