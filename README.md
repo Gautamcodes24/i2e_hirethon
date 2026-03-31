@@ -14,14 +14,16 @@ Production-grade RAG (Retrieval-Augmented Generation) system for answering quest
 ## Quick Start
 
 ### 1. Install dependencies
+# Please download the repo as zip and unzip it , Pushed some large file approx 150mb so git clone is not working properly
 
 ```powershell
 git clone https://github.com/Gautamcodes24/i2e_hirethon.git
 cd i2e_hirethon
 
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+#Step 2 after unzipping it and must be present in i2e_hirethon folder and terminal type powersheel.
+cmd 1 Create an virtual enviroment : python -m venv .venv
+cmd 2 Activate the virtual enviroment :  .\.venv\Scripts\Activate.ps1
+cmd 3 Install all required dependency:  pip install -r requirements.txt
 ```
 
 ### 2. Start the server
