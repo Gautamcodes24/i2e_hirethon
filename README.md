@@ -17,7 +17,7 @@ Production-grade RAG (Retrieval-Augmented Generation) system for answering quest
 
 ```powershell
 git clone https://github.com/Gautamcodes24/i2e_hirethon.git
-cd tech-manual-qa
+cd i2e_hirethon
 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
