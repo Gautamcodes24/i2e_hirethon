@@ -17,26 +17,6 @@ echo "==> Installing Python dependencies"
 .venv/bin/pip install -r requirements.txt -q
 
 echo "==> Configuring environment variables"
-GROQ_KEY="${GROQ_API_KEY:-}"
-OPENAI_KEY="${OPENAI_API_KEY:-}"
-
-if [[ -f .env ]]; then
-  [[ -z "$GROQ_KEY" ]] && GROQ_KEY="$(grep -m1 '^GROQ_API_KEY=' .env | cut -d= -f2- || true)"
-  [[ -z "$OPENAI_KEY" ]] && OPENAI_KEY="$(grep -m1 '^OPENAI_API_KEY=' .env | cut -d= -f2- || true)"
-fi
-
-if [[ -n "$GROQ_KEY" || -n "$OPENAI_KEY" ]]; then
-  cat > .env <<EOF
-GROQ_API_KEY=${GROQ_KEY}
-OPENAI_API_KEY=${OPENAI_KEY}
-EMBEDDING_PROVIDER=openai
-LLM_PROVIDER=groq
-VISION_PROVIDER=groq
-EOF
-  echo "Wrote .env with provider settings"
-elif [[ ! -f .env ]]; then
-  cp .env.example .env
-  echo "Copied .env.example to .env (add API keys in Environment settings)"
-fi
+"$(dirname "$0")/cloud-agent-start.sh"
 
 echo "==> Install complete"
